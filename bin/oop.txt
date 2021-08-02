@@ -1,0 +1,60 @@
+what object orientation?
+------------------------
+ - Based on objects, which consists of 
+	- State (data,held in fields)
+	- Behavior (methods, functions)
+	
+ - The state is hidden from other objects
+ 	- data is accessed through the object's own methods.
+ 
+ - An OO program is a collection of objects working together.
+ 
+why object orientation?
+-----------------------
+ - Almost universal in the s/w industry.
+ 
+ - useful for analysis, design and coding.
+ 
+ - most successful for managing complexity.
+ 	- Supports decoupling of subsystems.
+ 	- Encourages reuse if components.
+ 	
+ - Design rationale for much of java language.
+ 
+ What's wrong with Global Data structures
+ ----------------------------------------
+  - Responsibility for state becomes spread out
+  
+  - Different subsystems are coupled together.
+  
+  - Difficulty representing varied data formats.
+  
+  - Extremely difficult to parallelize.
+  
+ 
+ Example : flight  height  bearing  speed
+  			F-1      32      276    450
+  			F-2      30      376    850
+  			
+  		- we can access private data using getters and setters.
+  		- Encapsulation protects the object's fields from external access. 
+  		
+ Use cases
+ ---------
+ 	- Scenarios of system operation
+ 	- often started by a human user
+ 	- list the sequence of interaction steps.
+ 
+ Example - order control system
+ 
+ 1. Create order and check out - customer creates an order by first adding various products
+ 	(digital or physical) to a shopping cart, then checks out, making a payment using a credit card.
+ 	
+ 2. Fulfill order - for an order, the system discovers which distribution centers hold
+    stock of the products in the order. Each center which can help fulfill the order is
+    sent details of the products required together with the customer's details.
+    
+ 3.
+     
+ 		
+ 
