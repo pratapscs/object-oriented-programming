@@ -54,7 +54,44 @@ why object orientation?
     stock of the products in the order. Each center which can help fulfill the order is
     sent details of the products required together with the customer's details.
     
- 3.
-     
- 		
+ Use Cases -> Domain Model which consists of Conceptual Classes -> Software classes
  
+ Discovering a Conceptual Classes
+ --------------------------------
+  - A Customer creates an order by first adding various products(digital or physical)
+    to a shopping cart, then checks out, making a payment using a credit card.
+    
+    - Customer
+    - Order
+    - Product
+    - Shopping Cart
+    - Payment
+    - Credit Card
+    
+ Class Relations
+ ---------------
+         
+         (Composition)
+  	Customer (1) - "has-a" - (1) credit card
+  	
+   
+   	Product - "is-a" - 1.digital product
+                       2.physical product
+                       
+                       
+ 	         (Aggregation)
+ 	Shopping cart - (1) - "has-a" - (*) Product
+ 	
+ 	
+ Software classes
+ ----------------
+ - A customer checks out, making a payment using a credit card.
+ 
+ 	customer ------------------- Credit card
+ 	   |
+ 	name : string				number : long
+ 	creditCard : CreditCard 	CreditCard(long)
+ 	Customer(string, long)
+ 	
+    
+ 	
